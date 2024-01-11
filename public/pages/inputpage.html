@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <title>InputPage</title>
+</head>
+
+<body>
+  <header>
+    <h1>masukan data anda</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="inputpage.html">Input Page</a></li>
+        <li><a href="outputpage.html">Output Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="content" id="inputPageContainer" style="display: block">
+    <form action="/submit-data-form" method="post">
+      @csrf
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" />
+
+      <label for="nip">NIP:</label>
+      <input type="text" id="nip" name="nip" />
+
+      <label for="nomor-seri">Nomor Seri Kartu Pegawai:</label>
+      <input type="text" id="nomor-seri" name="nomor_seri_kartu_pegawai" />
+
+      <label for="tempat-tanggal-lahir">Tempat dan Tanggal Lahir:</label>
+      <input type="text" id="tempat-lahir" name="tempat_lahir" />
+      <input type="date" id="tanggal-lahir" name="tanggal_lahir" />
+
+      <label for="jenis-kelamin">Jenis Kelamin:</label>
+      <select id="jenis-kelamin" name="jenis_kelamin">
+        <option value="laki-laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+      </select>
+
+      <label for="pendidikan">Pendidikan:</label>
+      <input type="text" id="pendidikan" name="pendidikan" />
+
+      <label for="jabatan">Jabatan Akademi Dosen/TMT:</label>
+      <input type="text" id="jabatan" name="jabatan" />
+
+      <label for="masa-kerja-lama">Masa Kerja Golongan Lama:</label>
+      <input type="date" id="masa-kerja-lama" name="masa_kerja_lama" />
+
+      <label for="masa-kerja-baru">Masa Kerja Golongan Baru:</label>
+      <input type="date" id="masa-kerja-baru" name="masa_kerja_baru" />
+
+      <label for="unit-kerja">Unit Kerja:</label>
+      <input type="text" id="unit-kerja" name="unit_kerja" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- <script src="router.js"></script> -->
+</body>
+
+</html>
